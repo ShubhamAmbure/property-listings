@@ -1,12 +1,80 @@
-# React + Vite
+Property Listings App
+A modern, responsive React application for managing and viewing property listings. Users can add new properties, search/filter existing properties, and view property details with integrated Google Maps for location visualization.
+Built with React, TailwindCSS, Axios, React Modal, and Framer Motion for smooth animations and a sleek, modern UI.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add new properties with details: Name, Type, Price, Location, Description, Image, Latitude & Longitude
+Search properties by name or location
+Filter properties by type
+Responsive property cards with hover animations
+Detailed modal view with Google Maps for properties with coordinates
+Modern design with gradient backgrounds, glassmorphism cards, and gradient buttons
+Smooth animations using Framer Motion
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React – Frontend library for building UI components
+TailwindCSS – Utility-first CSS for rapid styling
+Axios – HTTP requests to backend API
+React Modal – Modal component for property details
+Framer Motion – Animations for cards and modals
 
-## Expanding the ESLint configuration
+Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository
+
+bashgit clone https://github.com/yourusername/property-listings.git
+cd property-listings
+
+Install dependencies
+
+bashnpm install
+
+Run the app
+
+bashnpm run dev
+
+Open in browser
+
+Visit http://localhost:5173 (Vite default)
+Backend API
+The app expects a backend API at:
+
+GET /properties – Fetch all properties
+POST /properties – Add a new property
+
+Sample property object:
+json{
+  "id": 1,
+  "name": "Luxury Villa",
+  "type": "Villa",
+  "price": 12000000,
+  "location": "Bengaluru, India",
+  "description": "A beautiful villa with garden.",
+  "image": "https://example.com/image.jpg",
+  "lat": 12.9716,
+  "lng": 77.5946
+}
+Make sure your backend API runs on http://localhost:5000/properties.
+Folder Structure
+plaintextsrc/
+ ├── components/
+ │   └── PropertyList.jsx
+ ├── App.jsx
+ └── main.jsx
+Usage
+
+Add Properties: Use the form to input property details like name, type, price, location, description, image URL, and coordinates
+Search & Filter: Search by name or location, and filter by property type using the dropdown
+View Details: Click a property card to view details in a modal, including a Google Maps display for properties with coordinates
+
+Contributing
+
+Fork the repository
+Create a feature branch (git checkout -b feature/your-feature)
+Commit changes (git commit -m "Add your feature")
+Push to the branch (git push origin feature/your-feature)
+Open a pull request
+
+License
+MIT License. See LICENSE for details.

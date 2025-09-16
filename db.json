@@ -1,0 +1,59 @@
+{
+  "properties": [
+    {
+      "id": 4,
+      "name": "Cozy Villa",
+      "type": "Villa",
+      "price": 250000,
+      "location": "Goa",
+      "description": "Beachfront villa with private pool",
+      "image": "https://via.placeholder.com/600x400",
+      "lat": 15.299326,
+      "lng": 73.912952
+    },
+    {
+      "id": 5,
+      "name": "Urban Studio",
+      "type": "Flat",
+      "price": 80000,
+      "location": "Delhi",
+      "description": "Modern studio in city center",
+      "image": "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      "lat": 28.704059,
+      "lng": 77.102490
+    },
+    {
+      "id": 6,
+      "name": "Mountain Retreat",
+      "type": "Cottage",
+      "price": 95000,
+      "location": "Manali",
+      "description": "Scenic cottage with mountain views",
+      "image": "https://images.pexels.com/photos/803908/pexels-photo-803908.jpeg",
+      "lat": 32.239632,
+      "lng": 77.188714
+    },
+    {
+      "id": 7,
+      "name": "Lakeside Bungalow",
+      "type": "House",
+      "price": 180000,
+      "location": "Udaipur",
+      "description": "Spacious bungalow by Lake Pichola",
+      "image": "https://via.placeholder.com/600x400",
+      "lat": 24.582441,
+      "lng": 73.712479
+    },
+    {
+      "id": 8,
+      "name": "City Loft",
+      "type": "Apartment",
+      "price": 110000,
+      "location": "Hyderabad",
+      "description": "Trendy loft in IT hub",
+      "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+      "lat": 17.385044,
+      "lng": 78.486671
+    }
+  ]
+}
